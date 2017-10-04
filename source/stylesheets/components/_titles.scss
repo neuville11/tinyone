@@ -2,11 +2,11 @@
   font-size: 3.4rem;
   font-weight: 700;
 
-  .black {
+  &.black {
     color: $mineShaft;
   }
 
-  .yellow {
+  &.yellow {
     color: $schoolBusYellow;
   }
 }
@@ -14,7 +14,11 @@
 .tinyone-subtitle {
   font-size: 2rem;
   font-weight: 400;
-  color: $dustyGray;
+  
+  &.gray {
+    color: $dustyGray;
+  }
+
 }
 
 .tinyone-feature__title {

@@ -1,12 +1,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "base/base";
 @import "utils/colors";
+@import "base/base",
+  "base/buttons";
 @import
-  "components/titles",
   "components/alignment",
+  "components/footer",
+  "components/form",
+  "components/icons",
+  "components/logos",
+  "components/navbar",
   "components/sections",
-  "components/navbar";
+  "components/titles";
 @import "font-awesome/css/font-awesome.min.css";
 
 

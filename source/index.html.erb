@@ -17,18 +17,24 @@ fontIcons:
   - "fa fa-envelope-o fa-3x"
   - "fa fa-bookmark-o fa-3x"
 
+socialMedia:
+  - "fa fa-facebook"
+  - "fa fa-twitter"
+  - "fa fa-google-plus"
+  - "fa fa-pinterest"
 ---
 
-<div class="section-first ">
+<div class="section-first">
+  <%= partial "partials/navbar" %>
 </div>
-<div class="tinyone-features__container">
+<div class="tinyone-features__container section-features">
   <h2 class="tinyone-title black">Tinyone features</h2>
-  <p class="tinyone-subtitle" >
+  <p class="tinyone-subtitle gray" >
     Lorem ipsum dolor sit amet,
     consectetur adipiscing elit. Praesent vitae eros eget tellus tristique
     bibendum.
   </p>
-  <p class="tinyone-subtitle" >Donec rutrum sed sem quis venenatis.</p>
+  <p class="tinyone-subtitle gray" >Donec rutrum sed sem quis venenatis.</p>
 <% current_page.data.features.each do |feature| %>
   <div class="col-md-4">
     <a class="col-md-1 pull-left margin-top__1-rem">
@@ -47,3 +53,5 @@ fontIcons:
   </div>
 <% end %>
 </div>
+
+<%= partial "partials/footer"%>

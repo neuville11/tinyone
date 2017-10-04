@@ -1,0 +1,69 @@
+<footer class="section-footer">
+  <div class="tinyone-footer__container container">
+    <h2 class="tinyone-title yellow">Keep in touch with us</h2>
+    <p class="tinyone-subtitle gray" >
+      Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit. Praesent vitae eros eget tellus tristique
+      bibendum.
+    </p>
+
+    <form class="form">
+      <div class="form-group col-md-10">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email to update">
+      </div>
+      <div class="col-md-2">
+        <button type="submit" class="btn btn-yellow">Submit</button>
+      </div>
+    </form>
+  </div>
+  <div class="social-media">
+    <% current_page.data.socialMedia.each do |icon|%>
+      <div class="social-media-icon">
+        <a href="#">
+          <i class="<%= icon %>"></i>
+        </a>
+      </div>
+    <% end %>
+  </div>
+  <div class="links">
+    <div class="col-md-1"></div>
+    <div class="contact container col-md-3">
+      <p class="contact-info"> HALOVIETNAM CO LTD. </p>
+      <p class="contact-info"> 66, Dang Van ngu, Dong Da </p>
+      <p class="contact-info"> Hanoi, Vietnam </p>
+      <p class="contact-info"> contact@halovietnam.com </p>
+      <p class="contact-info"> +844 35149182 </p>
+    </div>
+    <div class="col-md-2">
+      <ul>
+        <li> <a href="#"> Examples </a> </li>
+        <li> <a href="#"> Shop </a> </li>
+        <li> <a href="#"> License </a> </li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <ul>
+        <li> <a href="#"> Contact </a> </li>
+        <li> <a href="#"> About </a> </li>
+        <li> <a href="#"> Privacy </a> </li>
+        <li> <a href="#"> Terms </a> </li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <ul>
+        <li> <a href="#"> Download </a> </li>
+        <li> <a href="#"> Support </a> </li>
+        <li> <a href="#"> Documents </a> </li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <ul>
+        <li> <a href="#"> Media </a> </li>
+        <li> <a href="#"> Blog </a> </li>
+        <li> <a href="#"> Forums </a> </li>
+      </ul>
+    </div>
+
+  </div>
+
+</footer>
