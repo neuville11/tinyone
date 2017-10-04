@@ -1,0 +1,49 @@
+---
+title: Welcome to Middleman
+
+features: 
+  - "Fully Responsive"
+  - "Fully Layered PSD"
+  - "Font Awesome Icons"
+  - "HTML3 & CSS3"
+  - "Email Template"
+  - "Free to download"
+
+fontIcons:
+  - "fa fa-mobile fa-3x"
+  - "fa fa-folder-o fa-3x"
+  - "fa fa-lemon-o fa-3x"
+  - "fa fa-code fa-3x"
+  - "fa fa-envelope-o fa-3x"
+  - "fa fa-bookmark-o fa-3x"
+
+---
+
+<div class="section-first ">
+</div>
+<div class="tinyone-features__container">
+  <h2 class="tinyone-title black">Tinyone features</h2>
+  <p class="tinyone-subtitle" >
+    Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit. Praesent vitae eros eget tellus tristique
+    bibendum.
+  </p>
+  <p class="tinyone-subtitle" >Donec rutrum sed sem quis venenatis.</p>
+<% current_page.data.features.each do |feature| %>
+  <div class="col-md-4">
+    <a class="col-md-1 pull-left margin-top__1-rem">
+      <i class="<%=
+        current_page.data.fontIcons[current_page.data.features.index(feature)]
+        %>">
+      </i>
+    </a>
+    <div class="div-align__right">
+      <h3 class='tinyone-feature__title'><%= feature %></h3>
+      <p class='tinyone-feature__description'> Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Praesent vitae eros eget tellus tristique
+        bibendum.
+      </p>
+    </div>
+  </div>
+<% end %>
+</div>

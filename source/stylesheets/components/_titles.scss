@@ -1,0 +1,33 @@
+.tinyone-title {
+  font-size: 3.4rem;
+  font-weight: 700;
+
+  .black {
+    color: $mineShaft;
+  }
+
+  .yellow {
+    color: $schoolBusYellow;
+  }
+}
+
+.tinyone-subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  color: $dustyGray;
+}
+
+.tinyone-feature__title {
+  color: $mineShaft;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.tinyone-feature__description {
+  color: $dustyGray;
+  float: right;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: left;
+}
