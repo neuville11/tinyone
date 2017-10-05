@@ -16,3 +16,9 @@
   margin: 0 auto;
   width: 70%;
 }
+
+.inspire {
+  & > h2, & > h3, & > p {
+    text-align: left;
+  }
+}

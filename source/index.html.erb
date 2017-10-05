@@ -1,5 +1,5 @@
 ---
-title: Welcome to Middleman
+title: Tinyone
 
 features: 
   - "Fully Responsive"
@@ -10,7 +10,7 @@ features:
   - "Free to download"
 
 fontIcons:
-  - "fa fa-mobile fa-3x"
+  - "fa fa-mobile fa-4x"
   - "fa fa-folder-o fa-3x"
   - "fa fa-lemon-o fa-3x"
   - "fa fa-code fa-3x"
@@ -26,6 +26,25 @@ socialMedia:
 
 <div class="section-first">
   <%= partial "partials/navbar" %>
+  <!---->
+  <div>
+    <div class="col-md-4 inspire">
+      <h2>Inspire your inspiration</h2>
+      <h3>
+        Simple to use for your app, products showcase and your inspiration
+      </h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae
+       eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+      </p>
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
 </div>
 <div class="tinyone-features__container section-features">
   <h2 class="tinyone-title black">Tinyone features</h2>
@@ -55,3 +74,21 @@ socialMedia:
 </div>
 
 <%= partial "partials/footer"%>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
