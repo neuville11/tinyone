@@ -11,3 +11,10 @@
   height: 20rem;
   padding: 7rem;
 }
+
+.footer-links {
+
+  @media screen and(max-width: $desktop){
+    display: none;
+  }
+}
