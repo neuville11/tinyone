@@ -19,9 +19,7 @@
   <div class="social-media">
     <% current_page.data.socialMedia.each do |icon|%>
       <div class="social-media-icon">
-        <a href="#">
-          <i class="<%= icon %>"></i>
-        </a>
+        <%= image_tag(icon+".png")%>
       </div>
     <% end %>
   </div>

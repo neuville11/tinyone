@@ -10,7 +10,7 @@ features:
   - "Free to download"
 
 fontIcons:
-  - "fa fa-mobile fa-4x"
+  - "fa fa-mobile fa-3x"
   - "fa fa-folder-o fa-3x"
   - "fa fa-lemon-o fa-3x"
   - "fa fa-code fa-3x"
@@ -18,26 +18,40 @@ fontIcons:
   - "fa fa-bookmark-o fa-3x"
 
 socialMedia:
-  - "fa fa-facebook"
-  - "fa fa-twitter"
-  - "fa fa-google-plus"
-  - "fa fa-pinterest"
+  - "facebook"
+  - "twitter"
+  - "google"
+  - "pinterest"
+
+OS:
+  - "fa fa-apple fa-3x"
+  - "fa fa-android fa-3x"
+  - "fa fa-windows fa-3x"
 ---
 
 <div class="section-first">
   <%= partial "partials/navbar" %>
   <!---->
-  <div>
-    <div class="col-md-4 inspire">
+  <div class="col-sm-6 col-md-12">
+    <div class="col-md-5 inspire">
       <h2>Inspire your inspiration</h2>
       <h3>
         Simple to use for your app, products showcase and your inspiration
       </h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae
        eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+       Praesent vitae eros eget tellus tristique bibendum.
       </p>
+      <div class="operative-systems-list">
+        <% current_page.data.OS.each do |os| %>
+          <a href="#" class="operative-systems">
+            <i class="<%= os %>"></i>
+          </a>
+        <% end %>
+      </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 section-ipad">
+      <%= image_tag("ipad.png", class: 'ipad')%>
     </div>
   </div>
   <ol class="carousel-indicators">

@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "utils/colors";
+@import "utils/colors",
+  "utils/variables";
 @import "base/base",
   "base/buttons";
 @import

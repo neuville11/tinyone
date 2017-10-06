@@ -1,10 +1,18 @@
 .section-first {
   background-color: $schoolBusYellow;
-  height: 77rem;
+  height: 80rem;
 }
 
 .section-features {
   height: 50rem;
+
+  @media screen and(max-width: $desktop){
+    height: 85rem;
+  }
+
+  @media screen and(max-width: $mobile){
+    height: 120rem;
+  }
 }
 
 .section-footer {
@@ -18,7 +26,23 @@
 }
 
 .inspire {
+  margin-left: 13rem;
+  margin-top: 11rem;
+  @media screen and(max-width: $desktop) {
+    margin: 11rem 1rem 1rem 1rem;
+  }
+
   & > h2, & > h3, & > p {
     text-align: left;
+  }
+}
+
+.section-ipad {
+  float: right;
+  margin-right: 10rem;
+  margin-top: 6rem;
+
+  @media screen and(max-width: $desktop){
+    display: none;
   }
 }

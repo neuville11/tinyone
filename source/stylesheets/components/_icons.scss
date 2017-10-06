@@ -1,8 +1,17 @@
 .social-media-icon {
-  background-color: $schoolBusYellow;
-  border-radius: 0.5rem;
   display: inline-block;
-  height: 2.5rem;
   margin: 0 1rem 0 1rem;
-  width: 2.5rem;
+}
+
+.operative-systems {
+  margin: 3rem 1.5rem;
+
+  & > i {
+    color: $codGray;
+  }
+}
+
+.operative-systems-list {
+  float: left;
+  margin-top: 3rem;
 }
